@@ -1,5 +1,7 @@
 package hiber.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.*;
 
 @Entity
@@ -50,7 +52,7 @@ public class Car {
     public User getUser() {
         return user;
     }
-
+    
     public void setUser(User user) {
         this.user = user;
     }

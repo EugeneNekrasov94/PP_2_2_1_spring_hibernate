@@ -1,5 +1,7 @@
 package hiber.model;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
 import javax.persistence.*;
 
 @Entity
@@ -25,7 +27,6 @@ public class User {
 
     public User() {
     }
-
     public User(String firstName, String lastName, String email) {
         this.firstName = firstName;
         this.lastName = lastName;
